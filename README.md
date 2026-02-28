@@ -107,9 +107,8 @@ I changed the CSS snippet to:
     flex-direction: column;
     
     align-items: center;
- 
-  }
 
+  }
 
   .nav-list li {
   
