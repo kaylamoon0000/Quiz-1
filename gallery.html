@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Quiz Site</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Local styles to ensure image responsiveness as per Task 2 */
+    .plot-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .plot-container {
+      padding: 40px 0;
+      text-align: center;
+    }
+    .caption {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">My Portfolio</div>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="plot-container">
+    <h1>Study Results Visualization</h1>
+    
+    <img src="plot.png" alt="Scatter plot showing the positive correlation between study hours and exam scores" class="plot-image">
+
+    <div class="caption">
+      <p>This scatter plot illustrates a strong positive linear relationship where exam scores increase consistently as students spend more hours studying.</p>
+      <p>Based on this data, I would decide to recommend a minimum of 8 study hours for students aiming to achieve a score of 85 or higher.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    &copy; 2026
+  </div>
+</footer>
+
+</body>
+</html>
