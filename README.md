@@ -87,7 +87,9 @@ Instead of appearing stacked and centered, the links stayed aligned to the left 
 My CSS for the navigation was:
 
 .nav-list {
+
   display: flex;
+
   flex-direction: column;
   
 ## Most important part of AI response
@@ -99,14 +101,22 @@ Flexbox controls layout direction, but you must also explicitly control alignmen
 I changed the CSS snippet to:
 
 @media (max-width: 600px) {
+ 
   .nav-list {
+  
     flex-direction: column;
+    
     align-items: center;
+ 
   }
 
+
   .nav-list li {
+  
     margin: 8px 0;
+  
   }
+
 }
 
 # Viewport sizes I tested
