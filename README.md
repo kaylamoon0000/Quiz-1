@@ -63,10 +63,10 @@ I changed the CSS snippet to:
 
 # What I checked visually
 
-Header Navigation: verified menu stacked vertically on mobile; confirmed links were horizontally centered
+Header Navigation: verified menu stacked vertically on mobile; confirmed horizontal centering
 
 Hero Section: verified text and KPI card stayed horizontally aligned on desktop; confirmed vertical stacking on mobile.
 
 Grid Section: 4 columns on desktop, 2 columns on tablet, 1 column on mobile
 
-Buttons: onfirmed hover color change worked without shifting layout.
+Buttons: confirmed hover color change worked without shifting layout.
