@@ -6,26 +6,35 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
 }
 
+/* ------------------ */
 /* Container */
+/* ------------------ */
+
 .container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 1000px;      /* Required */
+  margin: 0 auto;         /* Centered */
+  padding: 0 20px;        /* Horizontal padding */
 }
 
+/* ------------------ */
 /* Header */
+/* ------------------ */
+
 .header {
   border-bottom: 1px solid #ddd;
 }
 
 .header-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Logo left, nav right */
   align-items: center;
   padding: 16px 0;
+}
+
+.logo {
+  font-weight: bold;
 }
 
 .nav-list {
@@ -44,13 +53,14 @@ body {
   color: black;
 }
 
+/* ------------------ */
 /* Hero Section */
+/* ------------------ */
+
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  display: flex;              /* Desktop: two columns */
   padding: 40px 0;
+  align-items: center;
 }
 
 .hero-text {
@@ -61,34 +71,59 @@ body {
   width: 240px;
   padding: 20px;
   border: 1px solid #ddd;
+  margin-left: auto;          /* Align right on desktop */
   text-align: center;
 }
 
+/* ------------------ */
 /* Grid Section */
+/* ------------------ */
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
   gap: 20px;
-  padding: 20px 0 40px 0;
+  padding: 40px 0;
 }
 
 .card {
   border: 1px solid #ddd;
   padding: 20px;
   text-align: center;
+  transition: 0.2s ease;
 }
 
+/* ------------------ */
 /* Button */
+/* ------------------ */
+
 .btn {
   display: inline-block;
   padding: 10px 14px;
   border: 1px solid black;
   text-decoration: none;
-  margin-top: 10px;
   color: black;
+  transition: 0.2s ease;
 }
 
+/* ------------------ */
+/* Hover Styles */
+/* ------------------ */
+
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+.card:hover {
+  background: #f5f5f5;
+  transform: translateY(-3px);
+}
+
+/* ------------------ */
 /* Footer */
+/* ------------------ */
+
 .footer {
   border-top: 1px solid #ddd;
   padding: 20px 0;
@@ -96,34 +131,40 @@ body {
 }
 
 /* ------------------ */
-/* Responsive Design  */
+/* Tablet: 601px–900px */
 /* ------------------ */
 
-/* Tablet */
-@media (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 900px) {
+
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
 
   .hero {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column;  /* Stack hero */
   }
 
   .hero-card {
-    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
-/* Mobile */
+/* ------------------ */
+/* Mobile: 0–600px */
+/* ------------------ */
+
 @media (max-width: 600px) {
+
+  /* Header stacks + centered */
   .header-inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .nav-list {
     flex-direction: column;
+    align-items: center;
     margin-top: 10px;
   }
 
@@ -131,6 +172,18 @@ body {
     margin: 8px 0;
   }
 
+  /* Hero stacks vertically */
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-card {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  /* Grid becomes 1 column */
   .grid {
     grid-template-columns: 1fr;
   }
