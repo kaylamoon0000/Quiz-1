@@ -3,9 +3,13 @@
 
 # Q1:
 
-## Key finding (2-4 sentences): The chart demonstrates a strong positive linear correlation between study hours and exam scores. As study time increases from 2 to 10 hours, exam scores rise consistently from 55 to 90 points. This suggests that for this group of students, academic performance is highly predictable based on the time invested in preparation.
+## Key finding (2-4 sentences): 
 
-## Outlier: There is a slight outlier at the 4-hour mark, where one student achieved a score of approximately 72, which is higher than the trendline's predicted value for that duration.
+The chart demonstrates a strong positive linear correlation between study hours and exam scores. As study time increases from 2 to 10 hours, exam scores rise consistently from 55 to 90 points. This suggests that for this group of students, academic performance is highly predictable based on the time invested in preparation.
+
+## Outlier: 
+
+There is a slight outlier at the 4-hour mark, where one student achieved a score of approximately 72, which is higher than the trendline's predicted value for that duration.
 
 # Q2:
 
