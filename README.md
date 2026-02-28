@@ -62,6 +62,7 @@ I changed the CSS snippet to:
 1366px — Standard laptop display
 
 # What I checked visually
+
 Header Navigation: verified menu stacked vertically on mobile; confirmed links were horizontally centered
 
 Hero Section: verified text and KPI card stayed horizontally aligned on desktop; confirmed vertical stacking on mobile.
